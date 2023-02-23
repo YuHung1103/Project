@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/personal"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"/>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/login"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/account_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/account_setup"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp">
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black">
+        </View>
+
+        <Button
+            android:id="@+id/personal_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:background="@color/white"
+            android:text="@string/personal_info"
+            android:textSize="20sp">
+
+        </Button>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/bottom_panel"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <ImageButton
+                    android:id="@+id/front_page"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:src="@drawable/front_page"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="bottom" />
+
+                <ImageButton
+                    android:id="@+id/booking"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:src="@drawable/booking"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="bottom" />
+
+                <ImageButton
+                    android:id="@+id/scan"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="70dp"
+                    android:src="@drawable/scanner"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="bottom" />
+
+                <ImageButton
+                    android:id="@+id/message"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:src="@drawable/message"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="bottom" />
+
+                <ImageButton
+                    android:id="@+id/user"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:src="@drawable/personal"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="bottom" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
