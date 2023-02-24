@@ -39,24 +39,29 @@
             android:ems="10"
             android:layout_marginTop="20dp"
             android:inputType="number"
-            android:hint="Please Enter Number of rooms">
+            android:hint="Please Enter Number of rooms"/>
 
-        </EditText>
-        <TextView
+        <EditText
+            android:id="@+id/checkinDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Please select Checkin Date">
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Please select Checkin Date"/>
 
-        </TextView>
-
-        <TextView
+        <EditText
+            android:id="@+id/checkoutDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Please select Checkout Date">
-
-        </TextView>
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Please select Checkout Date"/>
 
         <Button
             android:layout_width="match_parent"

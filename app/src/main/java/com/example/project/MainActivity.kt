@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private lateinit var ScanButton: ImageButton
-
+    private lateinit var MessageButton: ImageButton
     private lateinit var UserButton: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,11 +18,16 @@ class MainActivity : AppCompatActivity() {
 
 
         ScanButton = findViewById(R.id.scan)
+        MessageButton = findViewById(R.id.message)
         UserButton = findViewById(R.id.user)
 
 
         ScanButton.setOnClickListener{
             val intent = Intent(this, ScanPage::class.java)
+            startActivity(intent)
+        }
+        MessageButton.setOnClickListener{
+            val intent = Intent(this, ChooseDatePage::class.java)
             startActivity(intent)
         }
         UserButton.setOnClickListener{
