@@ -4,14 +4,19 @@
     <string name="control">控制家電</string>
     <string name="continuous">續住</string>
     <string name="checkout">退房</string>
-    <string name="login">login</string>
+    <string name="logout">logout</string>
     <string name="account_setup">帳號設定</string>
     <string name="personal_info">個人資料</string>
 
     <string-array name="type">
-        <item>Single Bed Room</item>
-        <item>Double Bed Room</item>
-        <item>Delux Bed Room</item>
-        <item>Super Delux Bed Room</item>
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+    </string-array>
+    <string-array name="people">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 </resources>

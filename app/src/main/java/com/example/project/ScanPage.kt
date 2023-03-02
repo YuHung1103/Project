@@ -22,6 +22,7 @@ private const val REQUEST_CAMERA: Int = 40
 class ScanPage : AppCompatActivity() {
 
     private lateinit var FrontPageButton : ImageButton
+    private lateinit var BookingButton: ImageButton
     private lateinit var UserButton: ImageButton
 
     private lateinit var scanner: SurfaceView
@@ -34,10 +35,15 @@ class ScanPage : AppCompatActivity() {
         setContentView(R.layout.scan_page)
 
         FrontPageButton = findViewById(R.id.front_page)
+        BookingButton = findViewById(R.id.booking)
         UserButton = findViewById(R.id.user)
 
         FrontPageButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        BookingButton.setOnClickListener{
+            val intent = Intent(this, BookingPage::class.java)
             startActivity(intent)
         }
         UserButton.setOnClickListener{

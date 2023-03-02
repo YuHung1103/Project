@@ -10,39 +10,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/photo"
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:src="@drawable/personal"
-                android:background="#00000000"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"/>
-
-            <Button
-                android:id="@+id/login"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/login"
-                android:layout_marginTop="20dp"/>
-
-        </LinearLayout>
+        <ImageButton
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/personal"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
 
         <TextView
-            android:id="@+id/account_setup"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/account_setup"
-            android:textStyle="bold"
-            android:textSize="25sp"
-            android:layout_marginTop="15dp">
+            android:text="使用者名稱"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp">
+
         </TextView>
 
         <View
@@ -55,12 +41,70 @@
             android:id="@+id/personal_info"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5sp"
+            android:layout_margin="12dp"
             android:background="@color/white"
             android:text="@string/personal_info"
+            android:textSize="20sp"
+            android:textColor="@color/black">
+
+        </Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black">
+        </View>
+
+        <Button
+            android:id="@+id/private_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            android:text="隱私設定"
             android:textSize="20sp">
 
         </Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black">
+        </View>
+
+        <Button
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            android:text="常見問題"
+            android:textSize="20sp">
+
+        </Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black">
+        </View>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            android:text="@string/logout"
+            android:textSize="20sp">
+
+        </Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black">
+        </View>
 
         <RelativeLayout
             android:layout_width="match_parent"

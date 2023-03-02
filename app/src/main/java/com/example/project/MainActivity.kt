@@ -7,7 +7,7 @@ import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {
 
-
+    private lateinit var BookingButton: ImageButton
     private lateinit var ScanButton: ImageButton
     private lateinit var MessageButton: ImageButton
     private lateinit var UserButton: ImageButton
@@ -16,18 +16,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        BookingButton = findViewById(R.id.booking)
         ScanButton = findViewById(R.id.scan)
         MessageButton = findViewById(R.id.message)
         UserButton = findViewById(R.id.user)
 
-
-        ScanButton.setOnClickListener{
-            val intent = Intent(this, ScanPage::class.java)
+        BookingButton.setOnClickListener{
+            val intent = Intent(this, BookingPage::class.java)
             startActivity(intent)
         }
-        MessageButton.setOnClickListener{
-            val intent = Intent(this, ChooseDatePage::class.java)
+        ScanButton.setOnClickListener{
+            val intent = Intent(this, ScanPage::class.java)
             startActivity(intent)
         }
         UserButton.setOnClickListener{

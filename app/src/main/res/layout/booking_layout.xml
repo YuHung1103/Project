@@ -42,19 +42,23 @@
                     android:id="@+id/type1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/type1">
+                    android:src="@drawable/singleroom"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY">
 
                 </ImageView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="房型1"
+                    android:text="Single Room"
                     android:textColor="@color/black"
-                    android:layout_margin="20dp"
+                    android:layout_margin="10dp"
                     android:gravity="center"
                     android:fontFamily="cursive"
-                    android:textStyle="bold">
+                    android:textStyle="bold"
+                    android:textSize="20dp">
 
                 </TextView>
 
@@ -63,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:text="Book Now"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="20dp">
+                    android:layout_marginBottom="10dp">
 
                 </Button>
             </LinearLayout>
@@ -89,19 +93,23 @@
                     android:id="@+id/type2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/type2">
+                    android:src="@drawable/doubleroom"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY">
 
                 </ImageView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="房型2"
+                    android:text="Double Room"
                     android:textColor="@color/black"
-                    android:layout_margin="20dp"
+                    android:layout_margin="10dp"
                     android:gravity="center"
                     android:fontFamily="cursive"
-                    android:textStyle="bold">
+                    android:textStyle="bold"
+                    android:textSize="20dp">
 
                 </TextView>
 
@@ -110,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:text="Book Now"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="20dp">
+                    android:layout_marginBottom="10dp">
 
                 </Button>
             </LinearLayout>
@@ -136,19 +144,23 @@
                     android:id="@+id/type3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/type3">
+                    android:src="@drawable/twinroom"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY">
 
                 </ImageView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="房型3"
+                    android:text="Twin Room"
                     android:textColor="@color/black"
-                    android:layout_margin="20dp"
+                    android:layout_margin="10dp"
                     android:gravity="center"
                     android:fontFamily="cursive"
-                    android:textStyle="bold">
+                    android:textStyle="bold"
+                    android:textSize="20dp">
 
                 </TextView>
 
@@ -157,10 +169,13 @@
                     android:layout_height="wrap_content"
                     android:text="Book Now"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="20dp">
+                    android:layout_marginBottom="10dp">
 
                 </Button>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
     </RelativeLayout>
+
 </ScrollView>
+
