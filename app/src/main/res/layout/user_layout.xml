@@ -42,10 +42,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="12dp"
-            android:background="@color/white"
             android:text="@string/personal_info"
             android:textSize="20sp"
-            android:textColor="@color/black">
+            android:gravity="left|center_vertical"
+            android:textColor="@color/black"
+            style="@style/Widget.MaterialComponents.Button.TextButton">
 
         </Button>
 
@@ -62,7 +63,10 @@
             android:layout_margin="12dp"
             android:background="@color/white"
             android:text="隱私設定"
-            android:textSize="20sp">
+            android:textSize="20sp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/black"
+            style="@style/Widget.MaterialComponents.Button.TextButton">
 
         </Button>
 
@@ -79,7 +83,10 @@
             android:layout_margin="12dp"
             android:background="@color/white"
             android:text="常見問題"
-            android:textSize="20sp">
+            android:textSize="20sp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/black"
+            style="@style/Widget.MaterialComponents.Button.TextButton">
 
         </Button>
 
@@ -91,20 +98,15 @@
 
         <Button
             android:id="@+id/logout"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="12dp"
-            android:background="@color/white"
             android:text="@string/logout"
-            android:textSize="20sp">
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black">
 
         </Button>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black">
-        </View>
 
         <RelativeLayout
             android:layout_width="match_parent"

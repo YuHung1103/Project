@@ -65,9 +65,13 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Book Now"
+                    android:text="Booking Now"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:textColor="@color/teal_200"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold">
 
                 </Button>
             </LinearLayout>
@@ -116,9 +120,13 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Book Now"
+                    android:text="Booking Now"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:textColor="@color/teal_200"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold">
 
                 </Button>
             </LinearLayout>
@@ -167,14 +175,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Book Now"
+                    android:text="Booking Now"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:textColor="@color/teal_200"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold">
 
                 </Button>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
     </RelativeLayout>
 
 </ScrollView>
